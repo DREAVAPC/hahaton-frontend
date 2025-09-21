@@ -1,0 +1,91 @@
+/* Register.module.css */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff; /* Чистый белый фон */
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.content {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #000000;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 32px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.input {
+  padding: 14px 16px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.primaryButton {
+  padding: 14px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.primaryButton:hover {
+  background-color: #333333;
+}
+
+.secondaryButton {
+  padding: 14px;
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.secondaryButton:hover {
+  background-color: #f9f9f9;
+}
