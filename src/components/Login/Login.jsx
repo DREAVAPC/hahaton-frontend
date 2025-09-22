@@ -1,5 +1,5 @@
 function Login() {
-  return <>Это окно логина будет разрабатываться Елисеем</>;
+  return <>Eлисеем</>;
 }
 
 export default Login;
