@@ -28,8 +28,8 @@ export default function Register() {
       return;
     }
 
-    // Создаем сообщение о успешной регистрации
-    const welcomeMessage = `Добро пожаловать ${formData.name} на роль "${formData.role}". Ваш пароль: ${formData.password}`;
+    // Создаем сообщение о успешной регистрации (без пароля)
+    const welcomeMessage = `Добро пожаловать ${formData.name} на роль "${formData.role}".`;
     
     // Показываем уведомление
     setNotification(welcomeMessage);
@@ -71,6 +71,7 @@ export default function Register() {
             className={styles.input}
             value={formData.password}
             onChange={handleInputChange}
+            required
           />
           <input
             type="text"
@@ -79,6 +80,7 @@ export default function Register() {
             className={styles.input}
             value={formData.name}
             onChange={handleInputChange}
+            required
           />
           <select 
             name="role"
@@ -97,6 +99,7 @@ export default function Register() {
             className={styles.input}
             value={formData.organization}
             onChange={handleInputChange}
+            required
           />
 
           <button type="submit" className={styles.primaryButton}>

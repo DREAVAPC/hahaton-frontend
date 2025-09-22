@@ -26,6 +26,7 @@
   animation: slideDown 0.3s ease-out;
   max-width: 90%;
   text-align: center;
+  font-size: 16px;
 }
 
 @keyframes slideDown {
@@ -116,4 +117,56 @@
 
 .secondaryButton:hover {
   background-color: #f9f9f9;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 480px) {
+  .page {
+    padding: 15px;
+  }
+  
+  .content {
+    max-width: 100%;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  
+  .form {
+    gap: 12px;
+  }
+  
+  .input {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .notification {
+    font-size: 14px;
+    padding: 12px 20px;
+    top: 10px;
+  }
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) and (min-width: 481px) {
+  .content {
+    max-width: 350px;
+  }
+  
+  .title {
+    font-size: 22px;
+  }
 }
